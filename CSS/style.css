@@ -1,13 +1,15 @@
 /*
 colors used:
-Primary Color (Blue): ##0458CB
+Primary Color (Blue): #0458CB
 Secondary Color (Green): #489c79
 */
-
-body{background-color: lightgrey; font-family: 'Open Sans',
+/* Layout styling */
+header{background-color: #489c79; padding: 10px; margin: 10px; border-bottom: 3px solid #000000}
+nav{float: right;}
+body{margin: 0 10px; background-color: lightgrey; font-family: 'Open Sans',
 sans-serif; font-size: 16px; font-weight: 300; line-height: 1.6;
 color: #FFFFFF}
-h1, h2, h3, h4 {line-height: 1.4;}
+h1, h2, h3, h4 {position: relative; margin:0 10px; line-height: 1.4;}
 h1 {font-size: 2.75em; font-weight:700;}
 h2 {font-size: 2.25em; font-weight:700;}
 h3 {font-size: 1.75em; font-weight:400;}
@@ -25,5 +27,5 @@ transition: .2s opacity;}
 .button.contact {background-color: transparent; color: #489c79;
 text-transform:uppercase; border: 2px solid #489c79}
 .button.contact: hover {background-color: #489c79; color:#ffffff;}
-.Hero {font-size:1.25em; text-transform: uppercase;}
-.work {font-size: 1.1em; font-style: italic;}
+#Hero {font-size:1.25em; text-transform: uppercase;}
+#work {margin: 0 10px; font-size: 1.1em; font-style: italic;}
