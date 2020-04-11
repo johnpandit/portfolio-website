@@ -4,8 +4,18 @@ Primary Color (Blue): #0458CB
 Secondary Color (Green): #489c79
 */
 /* Layout styling */
-header{background-color: #489c79; padding: 10px; margin: 10px; border-bottom: 3px solid #000000}
-nav{float: right;}
+*{box-sizing: border-box;}
+header{position: fixed;display: inline-block;
+box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75); background-color: #489c79;
+text-align: center; margin: 10px; border-bottom: 3px solid #000000}
+.logo{max-width: 250px; text-align:center;}
+nav {display: inline-block; width:100% }
+nav > ul{list-style-type: none; padding: 0;}
+nav > ul > li{display: inline-block;}
+nav > ul > li > a{padding: 0 15px; text-transform: uppercase; font-weight: 700; color:#4a4a4a;}
+nav > ul > li > a:visited {color: #FFFFFF;}
+nav > ul > li > a:hover {color: #000000;}
+main {padding-top: 300px;}
 body{margin: 0 10px; background-color: lightgrey; font-family: 'Open Sans',
 sans-serif; font-size: 16px; font-weight: 300; line-height: 1.6;
 color: #FFFFFF}
@@ -15,7 +25,7 @@ h2 {font-size: 2.25em; font-weight:700;}
 h3 {font-size: 1.75em; font-weight:400;}
 h4 {font-size: 1.35em; font-weight:400;}
 img {width: 100%;}
-a {color: ##0458CB; text-decoration: none;}
+a {color: #0458CB; text-decoration: none;}
 a:visited {color: #FFFFFF;}
 a:hover {color: #000000; text-decoration: underline;}
 a:focus {color: ##0458CB; text-decoration: underline;}
@@ -27,5 +37,9 @@ transition: .2s opacity;}
 .button.contact {background-color: transparent; color: #489c79;
 text-transform:uppercase; border: 2px solid #489c79}
 .button.contact: hover {background-color: #489c79; color:#ffffff;}
-#Hero {font-size:1.25em; text-transform: uppercase;}
+.container {padding: 0 15px;}
+#Hero {background-color: #ffe4c4; padding: 20px 0; display: inline-block; width: 100%; text-transform: uppercase;}
+#Hero h2{text-align: center; margin: 0; padding: .67em 0;}
 #work {margin: 0 10px; font-size: 1.1em; font-style: italic;}
+#work.row{padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;}
+.row{margin: 25px 0;}
