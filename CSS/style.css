@@ -9,7 +9,7 @@ header{position: fixed;display: inline-block;
 box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75); background-color: #489c79;
 text-align: center; margin: 10px; border-bottom: 3px solid #000000}
 .logo{max-width: 250px; text-align:center;}
-nav {display: inline-block; width:100% }
+nav {display: inline-block; width:auto; }
 nav > ul{list-style-type: none; padding: 0;}
 nav > ul > li{display: inline-block;}
 nav > ul > li > a{padding: 0 15px; text-transform: uppercase; font-weight: 700; color:#4a4a4a;}
@@ -18,28 +18,47 @@ nav > ul > li > a:hover {color: #000000;}
 main {padding-top: 300px;}
 body{margin: 0 10px; background-color: lightgrey; font-family: 'Open Sans',
 sans-serif; font-size: 16px; font-weight: 300; line-height: 1.6;
-color: #FFFFFF}
+color: #000000}
 h1, h2, h3, h4 {position: relative; margin:0 10px; line-height: 1.4;}
 h1 {font-size: 2.75em; font-weight:700;}
 h2 {font-size: 2.25em; font-weight:700;}
 h3 {font-size: 1.75em; font-weight:400;}
 h4 {font-size: 1.35em; font-weight:400;}
 img {width: 100%;}
-a {color: #0458CB; text-decoration: none;}
+a {color: #0458CB; text-decoration: none; display: inline-block;width: auto;}
 a:visited {color: #FFFFFF;}
 a:hover {color: #000000; text-decoration: underline;}
-a:focus {color: ##0458CB; text-decoration: underline;}
-a:active {color: ##0458CB;}
-.button{display: inline-block; background-color:#489c79;color: #FFFFFF; font-weight: 400; padding: 10px; border-radius: 4px;
-border-bottom: 2px solid ##0458CB;
-transition: .2s opacity;}
-.button: hover {opacity: .8; text-decoration: none;}
+a:focus {color: #0458CB; text-decoration: underline;}
+a:active {color: #0458CB;}
+transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+.button {display: inline-block; background-color:#0458CB ;color: #000000; font-weight: 400; padding: 10px;
+border-radius: 4px; border-bottom: 2px solid #0458CB;
+transition:.2s; opacity;}
+.button:hover {opacity: .8; text-decoration: none;}
 .button.contact {background-color: transparent; color: #489c79;
 text-transform:uppercase; border: 2px solid #489c79}
-.button.contact: hover {background-color: #489c79; color:#ffffff;}
+.button.contact:hover {background-color: #489c79; color:#ffffff;}
 .container {padding: 0 15px;}
-#Hero {background-color: #ffe4c4; padding: 20px 0; display: inline-block; width: 100%; text-transform: uppercase;}
+#Hero {background-color: #ffe4c4; padding: 20px 0; display: inline-block; width: 100%;}
 #Hero h2{text-align: center; margin: 0; padding: .67em 0;}
 #work {margin: 0 10px; font-size: 1.1em; font-style: italic;}
 #work.row{padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;}
 .row{margin: 25px 0;}
+@media only screen and (min-width: 640px) {header{text-align: unset; padding: 20px 0 13px;}
+nav{width: auto; float:right;margin-top: 4px} main{padding-top: 400px}
+body{font-size: 18px} #hero{text-align: center;}#hero span{display: block;}
+.col-md-6{width:50%;}[class*="col-"]{float: left;padding-top: 10px;}
+.col-md-5{width:50%;}[class*="col-"]{float: right;padding-top: 10px;}
+.row::after{content: "";clear: both; display: table;}
+#work h3{text-align: center;padding-top: 10px;}
+
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (min-width: 1440px) {}
+@keyframes color-change { from {fill: #edc655;} to {fill: #f76414;} }
+.sun{animation-duration: 4s; animation-name: color-change; animation-iteration-count: infinite;
+animation-direction: alternate; animation-timing-function: linear;}
+@keyframes cloud-move { from {transform: translate(0,50px);} to {transform: translate(200px, 50px)}}
+.cloud-front {animation-duration: 30s; animation-name: cloud-move; animation-iteration-count: infinite;animation-direction: alternate;animation-timing-function: linear;}
+@keyframes cloud-move-reverse { from{transform: translate(446px, 48px);} to {transform: translate(100px, 48px)}}
+.cloud-back {animation-duration: 34s; animation-name: cloud-move-reverse; animation-iteration-count: infinite;animation-direction: alternate;animation-timing-function: linear;}
