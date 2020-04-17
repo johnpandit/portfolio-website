@@ -256,7 +256,7 @@
              width:60%;
              padding-right: 5px;
          }
-         [class*="wordrow col-"]{
+         [class*="wordrow"]{
              float: right;
              padding-top: 10px;
           }
