@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <script src="https://kit.fontawesome.com/a43287d5b5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -13,11 +14,11 @@
 <body>
     <header>
         <div class="container">
-            <div>
+            <div class="navtoggle" id="myNavtoggle">
                 <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="88" height="128" viewBox="0 0 88 128">
                     <g id="Group_1" data-name="Group 1" transform="translate(-128 -350)">
                         <text id="J_" data-name="J
-        " transform="translate(143 350)" fill="#080808" font-size="60" font-family="HoeflerText-Black, Hoefler Text" font-weight="800">
+                        "transform="translate(143 350)" fill="#080808" font-size="60" font-family="HoeflerText-Black, Hoefler Text" font-weight="800">
                             <tspan x="0" y="43">J</tspan>
                         </text>
                         <text id="P" transform="translate(128 375)" fill="#0458cb" font-size="80" font-family="MontserratAlternates-Black, Montserrat Alternates" font-weight="800">
@@ -25,17 +26,19 @@
                         </text>
                     </g>
                 </svg>
-            </div>
-        </div>
         <div>
             <nav>
                 <ul class="navigation">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="noregrets.html">No Regrets Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="myfunction()">
+                    <i class="fas fa-bars"></i></a></li>
                 </ul>
             </nav>
+          </div>
+          </div>
         </div>
     </header>
     <main>
@@ -716,6 +719,10 @@
             <p>Copyright John-Pandithurai 2020</p>
         </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 
