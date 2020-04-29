@@ -1,6 +1,5 @@
-console.log("Welcome to John's Portfolio Site!")
 function menuToggle() {
-  var x = document.getElementbyId('myNavtoggle');
+  var x = document.getElementById('myNavtoggle');
   if(x.className === 'navtoggle'){
     x.className += 'responsive';
   } else {
