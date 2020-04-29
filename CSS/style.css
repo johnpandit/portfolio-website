@@ -16,7 +16,7 @@
 .navigation{
   list-style-type: none;
 }
-.navtoggle, .navtoggleresponsive{
+.navtoggle, .navtoggle.responsive{
   position: relative;
 }
 .navtoggle li .icon {
@@ -26,18 +26,15 @@
   font-size: 20px;
   padding-right: 0px;
 }
-.navtoggleresponsive li {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
-.navtoggleresponsive li .icon{
-  display: none;
-}
-.navtoggleresponsive nav{
+.navtoggle.responsive nav{
   padding: 24px 0 0;
 }
-.navtoggleresponsive li: last-child {
+.navtoggle.responsive li: last-child {
   padding: 0 0 10px;
 }
  .logo {
@@ -195,6 +192,29 @@
 }
 .navtoggle li:not(:last-child) {display: none;
 }
+.navtoggle.responsive li:not(:last-child) {display: block;
+}
+@media only screen and (max-width: 640px) {
+  .navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 127, 80, 0.5);
+  }
+  .navtoggle.responsive nav{
+    padding: 24px 0 0;
+  }
+  .navtoggle.responsive li: last-child {
+    padding: 0 0 10px;
+  }
+  .navtoggle, .navtoggle.responsive{
+    position: relative;
+  }
+  .navtoggle li:not(:last-child) {display: none;
+  }
+  .navtoggle.responsive li:not(:last-child) {display: block;
+  }
+}
+
  @media only screen and (min-width: 640px) {
     header{
         text-align: center;
