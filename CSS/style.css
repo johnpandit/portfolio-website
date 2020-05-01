@@ -115,6 +115,12 @@
      display: inline-block;
     width: auto;
 }
+#Resume{
+  color: #000080;
+  text-shadow: h-shadow;
+  text-decoration: underline;
+  font-weight: bolder;
+}
  a:visited {
     color: #FFFFFF;
 }
