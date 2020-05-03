@@ -1,9 +1,10 @@
 /* colors used: Primary Color (Blue): #0458CB Secondary Color (Green): #489c79 */
 /* Layout styling */
- *{
+*{
     box-sizing: border-box;
 }
- header{
+
+header{
     position: fixed;
     display: block;
     box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -34,7 +35,7 @@
 .navtoggle.responsive nav{
   padding: 24px 0 0;
 }
-.navtoggle.responsive li: last-child {
+.navtoggle.responsive li last-child {
   padding: 0 0 10px;
 }
  .logo {
@@ -117,7 +118,6 @@
 }
 #Resume{
   color: #000080;
-  text-shadow: h-shadow;
   text-decoration: underline;
   font-weight: bolder;
 }
@@ -209,7 +209,7 @@
   .navtoggle.responsive nav{
     padding: 24px 0 0;
   }
-  .navtoggle.responsive li: last-child {
+  .navtoggle.responsive li last-child {
     padding: 0 0 10px;
   }
   .navtoggle, .navtoggle.responsive{
@@ -285,65 +285,73 @@
         padding-top: 10px;
     }
      @media only screen and (min-width: 1024px) {
-          header{
-             text-align: center;
-              padding: 20px;
-         }
-         #logo{
-           float: left;
-           padding-bottom: 5px;
-         }
-          nav{
-             width: auto;
-              text-align: center;
-             margin:auto;
-         }
-          main{
-             padding-top: 400px
-         }
-          body{
-             font-size: 18px
-         }
-          #hero{
-             text-align: center;
-         }
-         #hero span{
-             display: block;
-         }
-       [class*="col-lg"]{
+       header{
+           text-align: center;
+            padding: 20px;
+       }
+       .logo{
+         float: left;
+         padding-bottom: 5px;
+         min-width: 641px
+       }
+        nav{
+           width: auto;
+            text-align: center;
+           margin:auto;
+       }
+       nav >ul{
+         margin: 1em 0;
+       }
+       nav > ul > li{
+          display: inline-block;
+       }
+       .navtoggle li:not(:last-child) {display: inline-block;
+       }
+       .navtoggle li:last-child{display: none;
+       }
+        main{
+           padding-top: 400px
+       }
+        body{
+           font-size: 18px
+       }
+        #hero{
+           text-align: center;
+       }
+       #hero span{
+           display: block;
+       }
+        .col-md-6{
+           width:50%;
+           padding: 5px;
+       }
+       [class*="col-"]{
            float: left;
            padding-top: 10px;
-         }
-        .col-lg-7{
-             width:60%;
-             padding: 5px;
-         }
-          .col-lg-7{
-             width:60%;
-             padding-right: 5px;
-         }
-         [class*="wordrow"]{
-             float: right;
-             padding-top: 10px;
-          }
-          .wordrow {
-            width: 40%
-          }
-         }
-          .row::after{
-             content: "";
-             clear: both;
-              display: table;
-         }
-          #work h3{
-             text-align: center;
-             padding-top: 10px;
+       }
+        .col-md-6{
+           width:50%;
+           padding-right: 5px;
+       }
+       [class*="col-"]{
+           float: right;
+           padding-top: 10px;
+           padding-left: 5px
+       }
+        .row::after{
+           content: "";
+           clear: both;
+            display: table;
+       }
+        #work h3{
+           text-align: center;
+           padding-top: 10px;
 
     }
 
      @keyframes color-change {
          from {
-            fill: #edc655;
+            fill: #228822;
         }
          to {
             fill: #f76414;
@@ -385,4 +393,4 @@
          animation-iteration-count: infinite;
         animation-direction: alternate;
         animation-timing-function:linear;
-    }
+  }
