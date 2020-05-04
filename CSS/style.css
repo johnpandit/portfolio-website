@@ -20,6 +20,7 @@ header{
 .navtoggle, .navtoggle.responsive{
   position: relative;
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
